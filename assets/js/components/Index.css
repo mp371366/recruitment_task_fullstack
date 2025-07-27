@@ -1,0 +1,28 @@
+div.Index {
+  width: 294px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+a.Index-link {
+  color: #010afb;
+}
+
+table.Index-table>caption {
+  font-weight: bold;
+  caption-side: top;
+}
+
+table.Index-table>tbody>tr>td,
+table.Index-table>thead>tr>th,
+table.Index-table {
+  border: solid 1px black;
+  border-collapse: collapse;
+}
+
+table.Index-table>tbody>tr>td,
+table.Index-table>thead>tr>th,
+table.Index-table>caption {
+  padding: 6px;
+  text-align: center;
+}

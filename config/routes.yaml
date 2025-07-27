@@ -1,19 +1,15 @@
-#home:
-#  path: /
-#  defaults: { _controller: 'AppBundle\Controller\DefaultController::indexAction' }
-#  methods:  GET
-#
+api_currencies:
+  path: /api/currencies
+  controller: App\Controller\DefaultController::currencies
 
-setupcheck:
-    path: /api/setup-check
-    controller: App\Controller\DefaultController::setupCheck
+api_currency:
+  path: /api/currency/{currency}/{startDate}/{endDate}
+  controller: App\Controller\DefaultController::currency
 
 index:
-    path: /{wildcard}
-    defaults: {
-        _controller: App\Controller\DefaultController::index
-    }
-    requirements:
-        wildcard: .*
-    # controller: App\Controller\DefaultController::index
-
+  path: /
+  defaults: {
+    _controller: App\Controller\DefaultController::index
+  }
+  requirements:
+    wildcard: .*
